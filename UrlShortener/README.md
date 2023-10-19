@@ -27,7 +27,7 @@ Example:
     - No
 
 6. What is the read-to-write ratio?
-    - 100: 1
+    - 100:1
 
 ### Functional Requirements
 
@@ -47,7 +47,18 @@ Example:
 
 ## Capacity Estimation
 
-### 1. Traffic Esitimates
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 100:1 and we are expected to have 500 million new short links generated monthly, 
+so the total number of redirections monthly will be:
+
+ - 100 * 500 million = 50 billion (URL redirections per month)
+
+Read and write in seconds:
+
+ - 500 million / (30 days * 24 hours * 3600 seconds) = 200 (URL's generated per second)
+
+ - 100 * 200 = 20000 (URL redirections per second)
 
 
 
