@@ -4,10 +4,10 @@
 Design a Url Shortener like tinyurl that generates short links, which redirect to original url.
 
 Example:
+    
+    - Original Url: https://linkedin.com/in/tahsin-rashad
 
-Original Url: https://linkedin.com/in/tahsin-rashad
-
-Short Link: https://tinyurl.com/h49w3mdd
+    - Short Link: https://tinyurl.com/h49w3mdd
 
 ## Requirements Engineering
 
@@ -22,8 +22,8 @@ Short Link: https://tinyurl.com/h49w3mdd
 3. Which is more important, Consistency or Availability?
     - Availability
 
-4. How many daily active users does the system have?
-    - 100 million active users
+4. How many new short links are expected to be generated per month?
+    - 500 million new short links
 
 5. Are there events that lead to spike in activity?
     - No
@@ -49,6 +49,8 @@ Short Link: https://tinyurl.com/h49w3mdd
 
 
 ## Capacity Estimation
+
+### 1. Traffic Esitimates
 
 
 
