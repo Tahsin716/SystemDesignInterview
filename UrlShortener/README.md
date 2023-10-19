@@ -28,6 +28,9 @@ Example:
 
 6. What is the read-to-write ratio?
     - 100:1
+  
+7. How long is the expiration of short links?
+    - 5 years
 
 ### Functional Requirements
 
@@ -60,6 +63,7 @@ Read and write in seconds:
 
  - 100 * 200 = 20000 (URL redirections per second)
 
+### 2. Storage Estimates
 
 
 
