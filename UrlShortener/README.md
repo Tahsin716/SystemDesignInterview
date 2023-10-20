@@ -1,7 +1,7 @@
 # Url Shortener
 
 ### Problem 
-Design a URL shortener like TinyURL that generates short links, that redirect to the original URL.
+Design a URL shortener like TinyURL that generates short links that redirect to the original URL.
 
 Example:
 - Original Url: https://linkedin.com/in/tahsin-rashad
@@ -17,7 +17,7 @@ Example:
 2. Is it a distributed system or a single server?
     - Distributed System
 
-3. Which is more important, Consistency or Availability?
+3. Which is more important: Consistency or Availability?
     - Availability
 
 4. How many new short links are expected to be generated monthly?
@@ -65,11 +65,11 @@ Read and write in seconds:
 
 ### 2. Storage Estimates
 
-Short links generated in the span of 5 years (since the expiry of the short link is 5 years):
+Short links generated in 5 years (since the expiry of the short link is, 5 years):
 
  - 500 million * (5 years * 12 months) = 30 billion
 
-Assuming each link is 1KB in memory, so total storage used in 5 years:
+Assuming each link is 1KB in memory. So, total storage used in 5 years:
 
  - 30 billion * 1KB = 30 TB
 
@@ -119,7 +119,7 @@ So the answer is **NoSQL**
 
 |  ShortLink    | 
 | ----------- | 
-| **Hash: varchar(16)** |
+| **Hash: varchar(8)** |
 | OrignialUrl: varchar(512)   | 
 | CreationDate: DateTime | 
 | ExpirationDate: DateTime |
@@ -142,6 +142,25 @@ So the answer is **NoSQL**
 
 ## System Design
 
-### Encoding Url
+### 1. Encoding Algorithm
 
+For generating short links we will use the MD5 Hash algorithm. We will hash the DateTime stamp + the user's IP Address.
 
+``` console
+    shortlink = md5_hash(datetime + ip_address);
+```
+
+We will use the first 8 characters of the hash generated as the short link.
+
+### 2. Database Sharding/Partition
+
+Since we have billions of data to store, we need to partition the database to store them efficiently.
+
+Let's assume we have 512 shards/machines where we can store our data.
+
+We will partition based on hashing. Each database will be identified with a hash number, and we will decide which database to store the short link
+by using a hash function.
+
+``` console
+    hash_function(shortlink) = 0-511 machines/shards
+```
