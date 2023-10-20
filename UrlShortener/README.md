@@ -137,7 +137,7 @@ So the answer is **NoSQL**
 |  Endpoint    | Verb | Response|
 | ----------- | ------- | ------ |
 | /createshortlink | Post | { "shortlink": "h49w3mdd"} |
-| /getoriginalurl?shortlink=h49w3mdd | Get | { "original_url": "https://linkedin.com/in/tahsin-rashad" } |
+| /getoriginalurl?shortlink=h49w3mdd | Get | { "original_url": `https://linkedin.com/in/tahsin-rashad` } |
 
 
 ## System Design
@@ -166,3 +166,4 @@ by using a hash function.
 ```
 ### 3. System Design Diagram
 
+![Url Shortener Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/UrlShortener/img/url_shortener.png)
