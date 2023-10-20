@@ -115,6 +115,20 @@ What kind of database should we use?
 
 So the answer is **NoSQL**
 
+### Database Design
 
+|  ShortLink    | 
+| ----------- | 
+| **Hash: varchar(16)** |
+| OrignialUrl: varchar(512)   | 
+| CreationDate: DateTime | 
+| ExpirationDate: DateTime |
+
+|  User    | 
+| ----------- | 
+| **UserId: int**   | 
+| Name: varchar(20) | 
+| Email: varchar(32) |
+| CreationDate: DateTime |
 
 
