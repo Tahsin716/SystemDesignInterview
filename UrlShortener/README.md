@@ -83,3 +83,38 @@ For read requests per second:
 
  - 20000 * 1KB = 20 MB/s
 
+### 4. Memory Estimates
+
+We will cache 20% of the requests (following the 80:20 principle where 20% of work provides 80% of the result)
+
+Since we have 20000 requests per second, so we have:
+
+ - 20000 * (24 hours * 3600 seconds) =~ 1.7 billion requests daily
+
+To cache 20% of the request, the amount of memory needed is:
+
+ - 0.2 * 1.7 billion * 1KB = 340 GB
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New URLS | 200/s       |
+| Url redirections   | 20000/s        |
+| Incoming data  | 200 KB/s        |
+| Outgoing data  | 20 MB/s        |
+| Storage data in 5 years | 30TB        |
+| Memory for cache daily | 340 GB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of rows
+ - No relationship between objects
+
+So the answer is **NoSQL**
+
+
+
+
