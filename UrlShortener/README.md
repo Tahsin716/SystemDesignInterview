@@ -65,5 +65,21 @@ Read and write in seconds:
 
 ### 2. Storage Estimates
 
+Short links generated in the span of 5 years (since the expiry of the short link is 5 years):
 
+ - 500 million * (5 years * 12 months) = 30 billion
+
+Assuming each link is 1KB in memory, so total storage used in 5 years:
+
+ - 30 billion * 1KB = 30 TB
+
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 200 * 1KB = 200 KB/s
+
+For read requests per second:
+
+ - 20000 * 1KB = 20 MB/s
 
