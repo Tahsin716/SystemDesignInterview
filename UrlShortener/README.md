@@ -164,3 +164,5 @@ by using a hash function.
 ``` console
     hash_function(shortlink) = 0-511 machines/shards
 ```
+### 3. System Design Diagram
+
