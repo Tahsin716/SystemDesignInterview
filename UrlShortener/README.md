@@ -131,4 +131,12 @@ So the answer is **NoSQL**
 | Email: varchar(32) |
 | CreationDate: DateTime |
 
+## API design
+
+|  Endpoint    | Verb | Response|
+| ----------- | ------- | ------ |
+| /createshortlink | Post | { "shortlink": "h49w3mdd"} |
+| /getoriginalurl?shortlink=h49w3mdd | Get | { "original_url": "https://linkedin.com/in/tahsin-rashad" } |
+
+
 
