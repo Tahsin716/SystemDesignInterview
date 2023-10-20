@@ -123,6 +123,7 @@ So the answer is **NoSQL**
 | OrignialUrl: varchar(512)   | 
 | CreationDate: DateTime | 
 | ExpirationDate: DateTime |
+| UserId: int   | 
 
 |  User    | 
 | ----------- | 
@@ -138,5 +139,9 @@ So the answer is **NoSQL**
 | /createshortlink | Post | { "shortlink": "h49w3mdd"} |
 | /getoriginalurl?shortlink=h49w3mdd | Get | { "original_url": "https://linkedin.com/in/tahsin-rashad" } |
 
+
+## System Design
+
+### Encoding Url
 
 
