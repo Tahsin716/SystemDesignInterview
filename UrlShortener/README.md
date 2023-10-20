@@ -1,4 +1,4 @@
-# Url Shortener
+# URL Shortener
 
 ### Problem 
 Design a URL shortener like TinyURL that generates short links that redirect to the original URL.
@@ -142,6 +142,7 @@ So the answer is **NoSQL**
 
 ## System Design
 
+
 ### 1. Encoding Algorithm
 
 For generating short links we will use the MD5 Hash algorithm. We will hash the DateTime stamp + the user's IP Address.
@@ -151,6 +152,7 @@ For generating short links we will use the MD5 Hash algorithm. We will hash the 
 ```
 
 We will use the first 8 characters of the hash generated as the short link.
+
 
 ### 2. Database Sharding/Partition
 
@@ -164,6 +166,9 @@ by using a hash function.
 ``` console
     hash_function(shortlink) = 0-511 machines/shards
 ```
+
+
 ### 3. System Design Diagram
+
 
 ![Url Shortener Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/UrlShortener/img/url_shortener.png)
