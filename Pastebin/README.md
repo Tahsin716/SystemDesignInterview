@@ -93,3 +93,14 @@ Since we have 55 requests per second, so we have:
 To cache 20% of the request, the amount of memory needed is:
 
  - 0.2 * 4.7 million * 10KB = 9.5 GB
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New pastes | 11/s       |
+| Paste reads   | 55/s        |
+| Incoming data  | 110 KB/s        |
+| Outgoing data  | 550 KB/s        |
+| Storage data in 1 year | 3TB        |
+| Memory for cache daily | 9.5 GB        |
