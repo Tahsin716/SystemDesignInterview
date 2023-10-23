@@ -19,14 +19,13 @@ Example:
 3. Which is more important: Consistency or Availability?
     - Availability
 
-4. How many new short links are expected to be generated monthly?
-    - 30 million new short links
-
+4. How many new pastes are expected to be generated monthly?
+    - 30 million new pastes
 5. Are there events that lead to a spike in activity?
     - No
 
 6. What is the read-to-write ratio?
     - 5:1
   
-7. How long is the expiration of short links?
+7. How long is the expiration of pastes?
     - 1 year
