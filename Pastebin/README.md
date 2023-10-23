@@ -139,3 +139,9 @@ For storing paste records we will use **NoSQL** and for storing paste objects we
 | Email: varchar(32) |
 | CreationDate: DateTime |
 
+## API Design
+
+|  Endpoint    | Verb | Response|
+| ----------- | ------- | ------ |
+| /createpaste | Post | { "pastelink": "h49w3mdd"} |
+| /getpaste?pastelink=h49w3mdd | Get | { "paste": `https://linkedin.com/in/tahsin-rashad` } |
