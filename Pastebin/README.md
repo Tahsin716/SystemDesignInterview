@@ -61,3 +61,14 @@ Read and write in seconds:
  - 30 million / (30 days * 24 hours * 3600 seconds) = 11 (pastes per second)
 
  - 5 * 11 = 55 (paste reads per second)
+
+### 2. Storage Estimates
+
+Pastes generated in 1 year (since the expiry of the paste is 1 year):
+
+ - 30 million * (1 year * 12 months) = 360 million
+
+Assuming each paste is 10KB in memory. So, the total storage used in 1 year:
+
+ - 360 million * 10KB = 3 TB
+
