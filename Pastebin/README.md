@@ -72,3 +72,12 @@ Assuming each paste is 10KB in memory. So, the total storage used in 1 year:
 
  - 360 million * 10KB = 3 TB
 
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 11 * 10KB = 110 KB/s
+
+For read requests per second:
+
+ - 55 * 10KB = 550 KB/s
