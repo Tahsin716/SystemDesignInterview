@@ -46,3 +46,18 @@ Example:
 | 2. High Availability   | 
 | 3. Low latency | 
 | 4. Scalable|
+
+## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 5:1 and we are expected to have 30 million new short links generated monthly, 
+so the total number of paste reads monthly will be:
+
+ - 5 * 30 million = 150 million paste reads
+
+Read and write in seconds:
+
+ - 30 million / (30 days * 24 hours * 3600 seconds) = 11 (pastes per second)
+
+ - 5 * 11 = 55 (paste reads per second)
