@@ -29,3 +29,11 @@ Example:
   
 7. How long is the expiration of pastes?
     - 1 year
+
+### Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. When a paste is uploaded a unique URL is generated via which the paste can be accessed.      | 
+| 2. Only text can be uploaded   | 
+| 3. The paste has an expiry date.|
