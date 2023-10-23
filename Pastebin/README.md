@@ -145,3 +145,10 @@ For storing paste records we will use **NoSQL** and for storing paste objects we
 | ----------- | ------- | ------ |
 | /createpaste | Post | { "pastelink": "h49w3mdd"} |
 | /getpaste?pastelink=h49w3mdd | Get | { "paste": `https://linkedin.com/in/tahsin-rashad` } |
+
+## System Design
+
+### 1. Encoding Algorithm and Database Sharding/Partition technique
+ - Exactly the same as the one used in the URL shortener service
+
+### 2. System Design Diagram
