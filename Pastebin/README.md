@@ -37,3 +37,12 @@ Example:
 | 1. When a paste is uploaded a unique URL is generated via which the paste can be accessed.      | 
 | 2. Only text can be uploaded   | 
 | 3. The paste has an expiry date.|
+
+### Non-Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. High Reliability (no pastes should be lost)   | 
+| 2. High Availability   | 
+| 3. Low latency | 
+| 4. Scalable|
