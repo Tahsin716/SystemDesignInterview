@@ -152,3 +152,5 @@ For storing paste records we will use **NoSQL** and for storing paste objects we
  - Exactly the same as the one used in the URL shortener service
 
 ### 2. System Design Diagram
+
+![Pastebin Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Pastebin/img/paste-bin.png)
