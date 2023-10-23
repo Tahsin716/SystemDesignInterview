@@ -29,7 +29,14 @@ Example:
   
 7. How long is the expiration of pastes?
     - 1 year
+    
+8. What is the max paste size?
+    - 10 MB
+  
+9. Any file type restriction of pastes?
+    - Only text is allowed
 
+      
 ### Functional Requirements
 
 |      | 
@@ -104,3 +111,31 @@ To cache 20% of the request, the amount of memory needed is:
 | Outgoing data  | 550 KB/s        |
 | Storage data in 1 year | 3TB        |
 | Memory for cache daily | 9.5 GB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of records
+ - No relationship between objects
+ - Paste objects can be a few MB.
+
+For storing paste records we will use **NoSQL** and for storing paste objects we will use an object storage db like **AWS S3**
+
+### Database Design
+
+|  Paste    | 
+| ----------- | 
+| **Hash: varchar(8)** |
+| ContentKey: varchar(512)   | 
+| CreationDate: DateTime | 
+| ExpirationDate: DateTime |
+| UserId: int   | 
+
+|  User    | 
+| ----------- | 
+| **UserId: int**   | 
+| Name: varchar(20) | 
+| Email: varchar(32) |
+| CreationDate: DateTime |
+
