@@ -78,3 +78,13 @@ Total storage required for 1 year:
 Total storage required for 10 years:
 
  - 2400TB * 10 years = 24 PB
+
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 385 * 200KB = 77 MB/s
+
+For read requests per second:
+
+ - 3850 * 200KB = 770 MB/s
