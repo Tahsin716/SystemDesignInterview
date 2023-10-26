@@ -147,3 +147,22 @@ For storing photo metadata we will use a wide-column database like **Apache Cass
 | **UserId1: int**   | 
 | **UserId2: int**   | 
 
+
+## System Design
+
+### Database Sharding/Partitioning
+
+Since we have billions of images to store, we need to partition the database to store them efficiently; assume we have **512 shards**
+
+We will generate PhotoId as follows:
+
+``` console
+    PhotoId = UserId+DateTimeStamp
+```
+
+That way we can find the shard as follows:
+
+``` console
+    shard = PhotoId % 512
+```
+
