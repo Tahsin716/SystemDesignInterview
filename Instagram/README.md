@@ -29,6 +29,9 @@ Example:
 7. What is the maximum file size allowed to upload?
     - 10 MB
   
+8. What is the average file size of images?
+    - 200 KB
+  
 ### Functional Requirements
 
 |      | 
@@ -61,3 +64,17 @@ Read and write in seconds:
  - 1 billion / (30 days * 24 hours * 3600 seconds) = 385 photos uploaded per second
 
  - 10 * 385 = 3850 reads per second
+
+### 2. Storage Estimates
+
+Total storage required for 1 month:
+
+ - 1 billion * 200 KB *  = 200TB
+
+Total storage required for 1 year:
+
+ - 200TB * (1 year * 12 months) = 2400 TB
+
+Total storage required for 10 years:
+
+ - 2400TB * 10 years = 24 PB
