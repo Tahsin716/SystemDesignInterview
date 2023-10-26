@@ -125,4 +125,25 @@ What kind of database should we use?
 
 For storing photo metadata we will use a wide-column database like **Apache Cassandra** and for storing image files we will use an object storage db like **AWS S3**, for complex relations like user follow we will use a graph database like **Neo4j**.
 
+### Database Design
+
+|  Photo    | 
+| ----------- | 
+| **PhotoId: int** |
+| ContentKey: varchar(512)   | 
+| CreationDate: DateTime | 
+| UserId: int   | 
+| Title: varchar(512)  | 
+
+|  User    | 
+| ----------- | 
+| **UserId: int**   | 
+| Name: varchar(20) | 
+| Email: varchar(32) |
+| CreationDate: DateTime |
+
+|  UserFollows    | 
+| ----------- | 
+| **UserId1: int**   | 
+| **UserId2: int**   | 
 
