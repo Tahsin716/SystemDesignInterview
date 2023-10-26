@@ -113,3 +113,14 @@ To cache 20% of the request, the amount of memory needed is:
 | Storage data in 1 year | 2.4 PB        |
 | Storage data in 10 years | 24 PB        |
 | Memory for cache daily | 12 TB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of images
+ - Read-heavy system
+ - Image size can be a few MB.
+
+For storing paste photo metadata we will use a wide-column database like **Apache Cassandra** and for storing image files we will use an object storage db like **AWS S3**
+
