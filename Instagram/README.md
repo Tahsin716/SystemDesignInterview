@@ -17,7 +17,7 @@ Example:
 3. Which is more important: Consistency or Availability?
     - Availability
 
-4. How many new images are expected to be generated monthly?
+4. How many new images are expected to be uploaded monthly?
     - 1 billion new images
       
 5. Are there events that lead to a spike in activity?
@@ -46,3 +46,12 @@ Example:
 | 2. High Availability   | 
 | 3. Low latency, acceptable latency for NewsFeed generation is 200ms | 
 | 4. Scalable|
+
+## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 10:1 and we are expected to have 1 billion photos uploaded monthly, 
+so the total number of reads monthly will be:
+
+ - 10 * 1 billion = 10 billion reads
