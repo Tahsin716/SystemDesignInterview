@@ -73,7 +73,7 @@ Total storage required for 1 month:
 
 Total storage required for 1 year:
 
- - 200TB * (1 year * 12 months) = 2400 TB
+ - 200TB * (1 year * 12 months) = 2.4 PB
 
 Total storage required for 10 years:
 
@@ -101,3 +101,15 @@ Since we have 3850 requests per second, so we have:
 To cache 20% of the request, the amount of memory needed is:
 
  - 0.2 * 300 million * 200KB = 12 TB
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New image uploads | 385/s       |
+| Image reads   | 3850/s        |
+| Incoming data  | 77 MB/s        |
+| Outgoing data  | 770 MB/s        |
+| Storage data in 1 year | 2.4 PB        |
+| Storage data in 10 years | 24 PB        |
+| Memory for cache daily | 12 TB        |
