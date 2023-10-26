@@ -88,3 +88,16 @@ For write requests per second:
 For read requests per second:
 
  - 3850 * 200KB = 770 MB/s
+
+
+### 4. Memory Estimates
+
+We will cache 20% of the requests (following the 80:20 principle where 20% of work provides 80% of the result)
+
+Since we have 3850 requests per second, so we have:
+
+ - 3850 * (24 hours * 3600 seconds) =~ 300 million requests daily
+
+To cache 20% of the request, the amount of memory needed is:
+
+ - 0.2 * 300 million * 200KB = 12 TB
