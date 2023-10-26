@@ -121,6 +121,8 @@ What kind of database should we use?
  - Billions of images
  - Read-heavy system
  - Image size can be a few MB.
+ - Complex relations like user follow.
 
-For storing paste photo metadata we will use a wide-column database like **Apache Cassandra** and for storing image files we will use an object storage db like **AWS S3**
+For storing photo metadata we will use a wide-column database like **Apache Cassandra** and for storing image files we will use an object storage db like **AWS S3**, for complex relations like user follow we will use a graph database like **Neo4j**.
+
 
