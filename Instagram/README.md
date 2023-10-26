@@ -55,3 +55,9 @@ Since the read-to-write ratio is 10:1 and we are expected to have 1 billion phot
 so the total number of reads monthly will be:
 
  - 10 * 1 billion = 10 billion reads
+
+Read and write in seconds:
+
+ - 1 billion / (30 days * 24 hours * 3600 seconds) = 385 photos uploaded per second
+
+ - 10 * 385 = 3850 reads per second
