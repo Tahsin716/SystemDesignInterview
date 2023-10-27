@@ -150,7 +150,7 @@ For storing photo metadata we will use a wide-column database like **Apache Cass
 
 ## System Design
 
-### Database Sharding/Partitioning
+### 1. Database Sharding/Partitioning
 
 Since we have billions of images to store, we need to partition the database to store them efficiently; assume we have **512 shards**
 
@@ -166,6 +166,6 @@ That way we can find the shard as follows:
     shard = PhotoId % 512
 ```
 
-### System Design Diagram
+### 2. System Design Diagram
 
 ![Instagram Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Instagram/img/instagram.png)
