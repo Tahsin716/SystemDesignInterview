@@ -166,3 +166,6 @@ That way we can find the shard as follows:
     shard = PhotoId % 512
 ```
 
+### System Design Diagram
+
+![Instagram Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Instagram/img/instagram.png)
