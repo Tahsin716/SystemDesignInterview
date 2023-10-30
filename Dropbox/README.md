@@ -93,3 +93,14 @@ For write requests per second:
 For read requests per second:
 
  - 3850 * 100KB = 380 MB/s
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New file uploads | 385/s       |
+| File reads   | 3850/s        |
+| Incoming data  | 38 MB/s        |
+| Outgoing data  | 380 MB/s        |
+| Storage data in 1 year | 3.6 PB        |
+| Storage data in 10 years | 36 PB        |
