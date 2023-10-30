@@ -49,3 +49,18 @@ Example:
 | 2. High Availability   | 
 | 3. Scalable|
 | 4. Strong Consistency |
+
+## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 10:1 and we are expected to have 1 billion files uploaded monthly, 
+so the total number of reads monthly will be:
+
+ - 10 * 1 billion = 10 billion reads
+
+Read and write in seconds:
+
+ - 1 billion / (30 days * 24 hours * 3600 seconds) = 385 files uploaded per second
+
+ - 10 * 385 = 3850 file reads per second
