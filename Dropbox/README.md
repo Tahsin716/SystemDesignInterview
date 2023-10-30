@@ -64,3 +64,22 @@ Read and write in seconds:
  - 1 billion / (30 days * 24 hours * 3600 seconds) = 385 files uploaded per second
 
  - 10 * 385 = 3850 file reads per second
+
+### 2. Storage Estimates
+
+Total storage required for 1 month:
+
+ - 1 billion * 100 KB *  = 100TB
+
+Total storage required for 1 year:
+
+ - 100TB * (1 year * 12 months) = 1.2 PB
+
+Total storage required for 10 years:
+
+ - 1200TB * 10 years = 12 PB
+
+With a replication factor of 3x, the storage required will be:
+ - For 1 month: 100TB * 3 = 300TB
+ - For 1 year: 1.2PB * 3 = 3.6PB
+ - For 10 years: 12PB * 3 = 36PB
