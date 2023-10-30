@@ -40,3 +40,11 @@ Example:
 | 2. Users should be able to share files or folders with other users.   | 
 | 3. Automatic synchronization between devices.|
 | 4. Offline editing and synchronization, when the user comes online. |
+
+### Non-Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. High Reliability (no user upload should be lost)   | 
+| 2. High Availability   | 
+| 3. Scalable|
