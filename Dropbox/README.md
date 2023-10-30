@@ -83,3 +83,13 @@ With a replication factor of 3x, the storage required will be:
  - For 1 month: 100TB * 3 = 300TB
  - For 1 year: 1.2PB * 3 = 3.6PB
  - For 10 years: 12PB * 3 = 36PB
+
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 385 * 100KB = 38 MB/s
+
+For read requests per second:
+
+ - 3850 * 100KB = 380 MB/s
