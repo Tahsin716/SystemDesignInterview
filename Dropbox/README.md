@@ -126,8 +126,8 @@ We will also have a relational database for Users.
 | CreatedBy: int   | 
 | LastUpdatedBy: int   | 
 | Title: varchar(512)  | 
-| Chunks: []  | 
-| Snapshots: []  | 
+| Chunks: [ ]  | 
+| Snapshots: [ ]  | 
 
 |  User    | 
 | ----------- | 
@@ -135,3 +135,5 @@ We will also have a relational database for Users.
 | Name: varchar(20) | 
 | Email: varchar(32) |
 | CreationDate: DateTime |
+
+## System Design
