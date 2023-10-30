@@ -48,3 +48,4 @@ Example:
 | 1. High Reliability (no user upload should be lost)   | 
 | 2. High Availability   | 
 | 3. Scalable|
+| 4. Strong Consistency |
