@@ -31,3 +31,12 @@ Example:
 
 8. What is the replication factor?
    - 3x
+
+### Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. Users can upload/download/view files.      | 
+| 2. Users should be able to share files or folders with other users.   | 
+| 3. Automatic synchronization between devices.|
+| 4. Offline editing and synchronization, when the user comes online. |
