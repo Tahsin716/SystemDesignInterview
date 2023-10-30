@@ -104,3 +104,34 @@ For read requests per second:
 | Outgoing data  | 380 MB/s        |
 | Storage data in 1 year | 3.6 PB        |
 | Storage data in 10 years | 36 PB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of files
+ - Read-heavy system
+ - Large volume of unstructured data.
+
+For storing files we will use an **Object Storage**, FileMetaData requires _ACID_ properties so we will use a **Relational Database**.
+We will also have a relational database for Users.
+
+### Database Design
+
+|  FileMetaData    | 
+| ----------- | 
+| **FileId: int** |
+| CreationDate: DateTime | 
+| LastUpdateDate: DateTime | 
+| CreatedBy: int   | 
+| LastUpdatedBy: int   | 
+| Title: varchar(512)  | 
+| Chunks: []  | 
+| Snapshots: []  | 
+
+|  User    | 
+| ----------- | 
+| **UserId: int**   | 
+| Name: varchar(20) | 
+| Email: varchar(32) |
+| CreationDate: DateTime |
