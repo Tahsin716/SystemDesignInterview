@@ -137,3 +137,7 @@ We will also have a relational database for Users.
 | CreationDate: DateTime |
 
 ## System Design
+
+### System Design Diagram
+
+![Dropbox Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Dropbox/img/dropbox.png)
