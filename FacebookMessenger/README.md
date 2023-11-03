@@ -43,3 +43,5 @@ Design a messaging service like Facebook Messenger where users can chat in almos
 | 2. Strong Consistency   | 
 | 3. Moderate Availability is expected to have Strong Consistency | 
 | 4. Scalable |
+
+## Capacity Estimation
