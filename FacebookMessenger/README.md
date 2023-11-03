@@ -131,4 +131,10 @@ We will use a wide-column database like **Apache Cassandra** for storing the mes
 | Columns: message_text, message_type, attachments, read_status, created_at, updated_at   | 
 
 
+## System Design
+
+### 1. Database Sharding/Partitioning
+
+We will have the load balancer map the user to the chat server.
+
 
