@@ -14,8 +14,8 @@ Design a messaging service like Facebook Messenger where users can chat in almos
 3. Which is more important: Consistency or Availability?
     - Consistency
 
-4. How many Daily Active Users are expected monthly?
-    - 100 million users
+4. How many messages are expected daily?
+    - 20 billion messages
       
 5. Are there events that lead to a spike in activity?
     - Let's say none for simplicity.
@@ -45,3 +45,16 @@ Design a messaging service like Facebook Messenger where users can chat in almos
 | 4. Scalable |
 
 ## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 1:1 and we are expected to have 20 billion read and writes daily, 
+
+Read and write in seconds:
+
+ - 20 billion / (24 * 3600) ~= 230000 messages
+
+Read and write monthly:
+
+ - 20 billion * 30 = 60 billion
+
