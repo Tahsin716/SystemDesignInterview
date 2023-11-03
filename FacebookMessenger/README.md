@@ -135,6 +135,12 @@ We will use a wide-column database like **Apache Cassandra** for storing the mes
 
 ### 1. Database Sharding/Partitioning
 
-We will have the load balancer map the user to the chat server.
+We will partition the db by hashing the UserId,
 
+``` console
+    hash(UserId) % Number of shards = db shard 
+```
 
+### 2. System Design Diagram
+
+![FacebookMessenger Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/FacebookMessenger/img/facebook-messenger.png)
