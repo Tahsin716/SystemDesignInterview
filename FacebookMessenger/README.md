@@ -102,3 +102,33 @@ To cache 20% of the messages, the amount of memory needed is:
 | Storage data in 1 year | 60TB        |
 | Storage data in 10 years | 7.2PB        |
 | Memory for cache daily | 400GB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of messages
+ - High rate of small updates.
+ - Fetch range of records with minimal latency.
+
+We will use a wide-column database like **Apache Cassandra** for storing the messages.
+
+### Database Design
+
+|  User    | 
+| ----------- | 
+| **Row key: user_id**   | 
+| Columns: name, profile_picture, status, last_active_at, created_at, updated_at | 
+
+|  Conversation    | 
+| ----------- | 
+| **Row key: conversation_id**   | 
+| Columns: participants, last_message_id, created_at, updated_at |
+
+|  Message    | 
+| ----------- | 
+| **Row key: conversation_id, timestamp** |
+| Columns: message_text, message_type, attachments, read_status, created_at, updated_at   | 
+
+
+
