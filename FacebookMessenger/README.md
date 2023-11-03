@@ -34,3 +34,12 @@ Design a messaging service like Facebook Messenger where users can chat in almos
 | 2. Messenger should keep track of the online/offline statuses of its users.   | 
 | 3. Messenger sends a notification once the user is online if there are new messages.   | 
 | 4. Messenger should support persistent storage of chat history. |
+
+### Non-Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. Low latency (users should have a real-time chat experience)   | 
+| 2. Strong Consistency   | 
+| 3. Moderate Availability is expected to have Strong Consistency | 
+| 4. Scalable |
