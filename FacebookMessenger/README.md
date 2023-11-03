@@ -25,3 +25,12 @@ Design a messaging service like Facebook Messenger where users can chat in almos
     
 7. What is the average size of each text size?
     - 100 bytes
+
+### Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. Messenger should support one-on-one conversations between users.      | 
+| 2. Messenger should keep track of the online/offline statuses of its users.   | 
+| 3. Messenger sends a notification once the user is online if there are new messages.   | 
+| 4. Messenger should support persistent storage of chat history. |
