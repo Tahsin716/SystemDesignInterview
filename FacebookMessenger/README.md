@@ -76,6 +76,12 @@ Total storage required for 10 years:
 
  - 720TB * 10 years = 7.2PB
 
+### 3. Network Estimates
+
+Since read and write are the same in ratio, both incoming and outgoing data will be the same
+
+ - 230000 messages/s * 100 bytes = 23 MB/s
+
 ### 4. Memory Estimates
 
 We will cache 20% of the requests (following the 80:20 principle where 20% of work provides 80% of the result)
@@ -85,3 +91,14 @@ Since we have 20 billion messages daily, which require 2TB storage:
 To cache 20% of the messages, the amount of memory needed is:
 
  - 0.2 * 2TB = 400GB
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New messages | 230000/s       |
+| Incoming data  | 23 MB/s        |
+| Outgoing data  | 23 MB/s        |
+| Storage data in 1 year | 60TB        |
+| Storage data in 10 years | 7.2PB        |
+| Memory for cache daily | 400GB        |
