@@ -56,13 +56,17 @@ Read and write in seconds:
 
 Read and write monthly:
 
- - 20 billion * 30 = 600 billion
+ - 20 billion * 30 = 600 billion messages
 
 ### 2. Storage Estimates
 
+Total storage required daily:
+ 
+ - 20 billion messages * 100 KB = 2TB
+   
 Total storage required for 1 month:
 
- - 600 billion * 100 KB *  = 60TB
+ - 600 billion messages * 100 KB *  = 60TB
 
 Total storage required for 1 year:
 
@@ -71,3 +75,13 @@ Total storage required for 1 year:
 Total storage required for 10 years:
 
  - 720TB * 10 years = 7.2PB
+
+### 4. Memory Estimates
+
+We will cache 20% of the requests (following the 80:20 principle where 20% of work provides 80% of the result)
+
+Since we have 20 billion messages daily, which require 2TB storage:
+
+To cache 20% of the messages, the amount of memory needed is:
+
+ - 0.2 * 2TB = 400GB
