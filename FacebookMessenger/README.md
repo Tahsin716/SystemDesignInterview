@@ -56,5 +56,18 @@ Read and write in seconds:
 
 Read and write monthly:
 
- - 20 billion * 30 = 60 billion
+ - 20 billion * 30 = 600 billion
 
+### 2. Storage Estimates
+
+Total storage required for 1 month:
+
+ - 600 billion * 100 KB *  = 60TB
+
+Total storage required for 1 year:
+
+ - 60TB * (1 year * 12 months) = 720TB
+
+Total storage required for 10 years:
+
+ - 720TB * 10 years = 7.2PB
