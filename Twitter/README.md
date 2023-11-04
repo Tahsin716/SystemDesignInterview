@@ -23,7 +23,7 @@ Design a social networking service like Twitter where users can post tweets, and
 6. What is the read-to-write ratio?
     - 100:1
     
-7. What is the average size of each text size?
+7. What is the average size of each tweet size?
     - 200 bytes
 
 8. How many Daily Active Users does the system have?
@@ -33,8 +33,14 @@ Design a social networking service like Twitter where users can post tweets, and
     - 1 billion favorites
 
 10. How many total views does the system generate per day?
-     - 28 billion views
+    - 28 billion views
 
+11. How many tweets are expected to have media files attached and uploaded per day?
+    - 20 million
+
+12. What is the average size of media files?
+    - 200 kb
+      
 ### Functional Requirements
 
 |      | 
@@ -50,7 +56,17 @@ Design a social networking service like Twitter where users can post tweets, and
 | ----------- | 
 | 1. High Reliability  | 
 | 2. High Availability   | 
-| 3. Low latency, acceptable latency for Timeline generation is 200ms | 
-| 4. Scalable|
+| 3. Low latency: acceptable latency for Timeline generation is 200ms | 
+| 4. Scalable |
 
 ## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Daily we have 100 million tweets and 28 billion tweet views
+
+Read and write per second:
+
+ - 100 million tweets / (24 * 3600) = 1150 tweets/s
+
+ - 28 billion tweet views / (24 * 3600) = 324000 tweet views/s
