@@ -104,3 +104,16 @@ Since we have 100 million requests daily
 To cache 20% of the request, the amount of memory needed is:
 
  - 0.2 * (100 million * 200 bytes + 20 million * 200 kb)  = 800 GB
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New tweets uploads | 1150/s       |
+| New tweets with media files   | 230/s        |
+| Incoming data  | 46 MB/s        |
+| Outgoing data  | 1.3 GB/s        |
+| Storage data in 1 year | 1.4 PB        |
+| Storage data in 10 years | 14 PB        |
+| Memory for cache daily | 800 GB        |
+
