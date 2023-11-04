@@ -155,3 +155,23 @@ database like **PostgreSQL**.
     tweet(user_id, tweet_content, latitude, longitude, media_ids)
 ```
 
+## System Design
+
+### 1. Database Sharding/Partitioning
+
+Since we have billions of tweets to store, we need to partition the database to store them efficiently; assume we have **512 shards**
+
+We will generate TweetId as follows:
+
+``` console
+    TweetId = UserId+DateTimeStamp
+```
+
+That way we can find the shard as follows:
+
+``` console
+    shard = TweetId % 512
+```
+
+
+### 2. System Design Diagram
