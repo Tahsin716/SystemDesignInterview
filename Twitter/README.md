@@ -175,3 +175,5 @@ That way we can find the shard as follows:
 
 
 ### 2. System Design Diagram
+
+![Twitter Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Twitter/img/twitter.png)
