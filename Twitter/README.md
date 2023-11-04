@@ -25,3 +25,9 @@ Design a social networking service like Twitter where users can post tweets, and
     
 7. What is the average size of each text size?
     - 200 bytes
+
+8. How many Daily Active Users does the system have?
+    - 200 million users
+  
+9. How many favorites does a user have on average per day?
+    - 5 favorites
