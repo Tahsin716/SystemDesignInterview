@@ -52,3 +52,5 @@ Design a social networking service like Twitter where users can post tweets, and
 | 2. High Availability   | 
 | 3. Low latency, acceptable latency for Timeline generation is 200ms | 
 | 4. Scalable|
+
+## Capacity Estimation
