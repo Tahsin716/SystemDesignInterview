@@ -148,3 +148,10 @@ database like **PostgreSQL**.
 | ----------- | 
 | **Row key: user_id**   | 
 | Columns: user_follows|
+
+## API Design
+
+``` console
+    tweet(user_id, tweet_content, latitude, longitude, media_ids)
+```
+
