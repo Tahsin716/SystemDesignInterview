@@ -29,5 +29,8 @@ Design a social networking service like Twitter where users can post tweets, and
 8. How many Daily Active Users does the system have?
     - 200 million users
   
-9. How many favorites does a user have on average per day?
-    - 5 favorites
+9. How many favorites does the system have per day?
+    - 1 billion favorites
+
+10. How many total views does the system generate per day?
+     - 28 billion views
