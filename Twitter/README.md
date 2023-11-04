@@ -70,3 +70,17 @@ Read and write per second:
  - 100 million tweets / (24 * 3600) = 1150 tweets/s
 
  - 28 billion tweet views / (24 * 3600) = 324000 tweet views/s
+
+### 2. Storage Estimates
+
+Total storage required for 1 month:
+
+ - (100 million * 200 bytes)  + (20 million * 200 kb) * 30 = (20 GB + 4TB) * 30 = 120TB
+
+Total storage required for 1 year:
+
+ - 120TB * (1 year * 12 months) = 1.4 PB
+
+Total storage required for 10 years:
+
+ - 1.4PB * 10 years = 14 PB
