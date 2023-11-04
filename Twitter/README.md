@@ -117,3 +117,34 @@ To cache 20% of the request, the amount of memory needed is:
 | Storage data in 10 years | 14 PB        |
 | Memory for cache daily | 800 GB        |
 
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of tweets
+ - Read-heavy system
+ - Media file size can be a few MB.
+ - Complex relations like user follow.
+
+For storing user tweets we will use a wide-column database like **Apache Cassandra** for storing images we will use a cloud storage like
+**AWS S3**, for complex relations like user follow we will use a graph database like **Neo4j**, for storing user data we can use a relational
+database like **PostgreSQL**.
+
+### Database Design
+
+|  Tweet    | 
+| ----------- | 
+| **Row key: tweet_id**   | 
+| Columns: tweet_content, latitude, longitude, content_keys, user_id|
+
+|  User    | 
+| ----------- | 
+| **UserId: int**   | 
+| Name: varchar(20) | 
+| Email: varchar(32) |
+| CreationDate: DateTime |
+
+|  UserFollows    | 
+| ----------- | 
+| **Row key: user_id**   | 
+| Columns: user_follows|
