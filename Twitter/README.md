@@ -84,3 +84,13 @@ Total storage required for 1 year:
 Total storage required for 10 years:
 
  - 1.4PB * 10 years = 14 PB
+
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 1150 * 200 bytes + 230 * 200 kb = 46 MB/s
+
+For read requests per second:
+
+ - 324000 * 200KB  + 6400 * 200 kb = 1.3 GB/s
