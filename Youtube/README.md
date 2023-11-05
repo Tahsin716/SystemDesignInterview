@@ -64,3 +64,21 @@ Read and write monthly:
 
  - 1 million * 30 = 30 million video uploads per month
  - 200 * 30 = 6 billion views per month
+
+### 2. Storage Estimates
+
+Total storage required daily:
+ 
+ - 1 million videos * 50 MB = 50 TB
+   
+Total storage required for 1 month:
+
+ - 30 million * 50 MB *  = 1.5 PB
+
+Total storage required for 1 year:
+
+ - 1.5 PB * (1 year * 12 months) = 18 PB
+
+Total storage required for 10 years:
+
+ - 18 PB * 10 years = 180 PB
