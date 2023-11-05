@@ -38,3 +38,12 @@ Design a video-sharing service like YouTube, where users can upload/view/search 
 | 3. Users should be able to perform searches based on video titles.   | 
 | 4. Users should be able to add and view comments on videos. |
 | 5. The system should record statistics of likes, dislikes, views, etc. |
+
+### Non-Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. High Reliability (no user upload should be lost)   | 
+| 2. High Availability   | 
+| 3. Low latency | 
+| 4. Scalable |
