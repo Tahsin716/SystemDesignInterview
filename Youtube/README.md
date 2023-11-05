@@ -103,3 +103,56 @@ For read requests per second:
 | Outgoing data  | 120 GB/s        |
 | Storage data in 1 year | 18 PB        |
 | Storage data in 10 years | 180 PB        |
+
+## Data Model
+
+What kind of database should we use?
+
+ - Billions of video uploads
+ - Read-heavy system
+ - Media file size can be a few GB.
+
+For storing video we will use a distributed file storage system like **HDFS**, for video metadata we can use a relational database like
+**PostgreSQL**,
+
+### Database Design
+
+|  VideoMetadata    | 
+| ----------- | 
+| **VideoId**   | 
+| Title | 
+| Description|
+| CreationDate |
+| UploadedBy |
+| Likes |
+| Dislikes |
+| Views |
+
+|  Comment    | 
+| ----------- | 
+| **CommentId**   | 
+| VideoId | 
+| UserId|
+| CreationDate |
+| Comment |
+
+|  User    | 
+| ----------- | 
+| **UserId**   | 
+| Name | 
+| Email |
+| CreationDate |
+
+## API Design
+
+``` console
+    search_video(search_query, page_size, page_number)
+```
+
+``` console
+    stream_video(video_id, resolution)
+```
+
+``` console
+    upload_video(video_title, video_description, tags, category_ids, video_content)
+```
