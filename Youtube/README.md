@@ -29,3 +29,12 @@ Design a video-sharing service like YouTube, where users can upload/view/search 
 8. How many Daily Active Users are expected?
     - 800 million
 
+### Functional Requirements
+
+|      | 
+| ----------- | 
+| 1. Users should be able to upload videos.      | 
+| 2. Users should be able to share and view videos.   | 
+| 3. Users should be able to perform searches based on video titles.   | 
+| 4. Users should be able to add and view comments on videos. |
+| 5. The system should record statistics of likes, dislikes, views, etc. |
