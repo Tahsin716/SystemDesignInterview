@@ -47,3 +47,20 @@ Design a video-sharing service like YouTube, where users can upload/view/search 
 | 2. High Availability   | 
 | 3. Low latency | 
 | 4. Scalable |
+
+## Capacity Estimation
+
+### 1. Traffic Estimates
+
+Since the read-to-write ratio is 200:1 and we are expected to have 1 million video uploads daily, so
+daily video views will be 200 million.
+
+Read and write in seconds:
+
+ - 1 million / (24 * 3600) = 12 video uploads/s
+ - 200 * 12 = 2400 views/s
+
+Read and write monthly:
+
+ - 1 million * 30 = 30 million video uploads per month
+ - 200 * 30 = 6 billion views per month
