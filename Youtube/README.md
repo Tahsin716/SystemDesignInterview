@@ -156,3 +156,15 @@ For storing video we will use a distributed file storage system like **HDFS**, f
 ``` console
     upload_video(video_title, video_description, tags, category_ids, video_content)
 ```
+## System Design
+
+### 1. Database Sharding/Partitioning
+
+We will perform database sharding by hashing VideoId
+
+``` console
+   hash(video_id) % no. of shards = shard
+```
+
+### 2. System Design Diagram
+
