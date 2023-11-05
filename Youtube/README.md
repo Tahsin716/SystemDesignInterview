@@ -82,3 +82,24 @@ Total storage required for 1 year:
 Total storage required for 10 years:
 
  - 18 PB * 10 years = 180 PB
+
+### 3. Network Estimates
+
+For write requests per second:
+
+ - 12 * 50 MB = 600 MB/s
+
+For read requests per second:
+
+ - 200 * 600 MB/s = 120 GB/s
+
+### High-Level Estimates
+
+| Parameter | Estimates  |
+| ----------- | ----------- |
+| New video uploads | 12/s       |
+| Video views   | 2400/s        |
+| Incoming data  | 600 MB/s        |
+| Outgoing data  | 120 GB/s        |
+| Storage data in 1 year | 18 PB        |
+| Storage data in 10 years | 180 PB        |
