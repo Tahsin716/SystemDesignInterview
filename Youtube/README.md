@@ -168,3 +168,4 @@ We will perform database sharding by hashing VideoId
 
 ### 2. System Design Diagram
 
+![Youtube Diagram](https://github.com/Tahsin716/SystemDesignInterview/blob/main/Youtube/img/youtube.png)
